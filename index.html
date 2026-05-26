@@ -1,44 +1,723 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <base target="_blank">
-  <meta charset="UTF-8" />
-  <title>JANNATUN TAZREE</title>
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
-  <!-- remember, jQuery is completely optional -->
-  <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
-  <script type="text/javascript" src="js/jquery.particleground.js"></script>
-  <script type="text/javascript" src="js/demo.js"></script>
+<meta charset="UTF-8">
+<meta name="description" content="Portfolio of Jannatun Tazree — UI/UX Designer, Digital Artist & Data Analyst based in Dhaka, Bangladesh.">
+<meta name="keywords" content="UI/UX, Digital Art, Adobe Illustrator, Figma, Power BI, Data Analytics, Bangladesh">
+<meta name="author" content="Jannatun Tazree">
+<meta property="og:title" content="Jannatun Tazree — Designer & Digital Artist">
+<meta property="og:description" content="Portfolio of Jannatun Tazree — UI/UX Designer, Digital Artist & Data Analyst.">
+<meta property="og:image" content="img/Jannatun_Tazree.jpg">
+<meta property="og:type" content="website">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<meta name="theme-color" content="#5a6b35">
+
+<title>Jannatun Tazree — Designer & Digital Artist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+<div id="cur"></div>
+<div id="cur2"></div>
 
-<div id="particles">
-  <div id="intro">
-      <h2 style="font-family: 'Hina Mincho', serif; font-weight: 10;">JANNATUN TAZREE</h2>
-      <h3 style="font-family: 'Hina Mincho', serif; font-weight: 10; font-size: 20px; padding-bottom: 10px;">jannatuntazree00@gmail.com</h3>
-        <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
-    <a href="https://www.linkedin.com/in/jannatuntazree/" style="color: white;"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="https://www.facebook.com/oishee152/" style="color: white;"><i class="fab fa-facebook" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="https://github.com/JannatunTazree" style="color: white;"><i class="fab fa-github" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="pdf/Jannatun Tazree Resume.pdf" style="color: white;"><i class="far fa-file" style="font-size: 2em;"></i></a>
+<!-- LIGHTBOX -->
+<div class="lb" id="lb"><img id="lbImg" src="" alt=""><div class="lb-x" id="lbX">Close ✕</div></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-name">Jannatun Tazree</a>
+  <ul class="nav-links">
+    <li><a href="#art">Digital Art</a></li>
+    <li><a href="#brainbridge">UI/UX</a></li>
+    <li><a href="#fakenews">Data</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="assets/CV_Jannatun_Tazree.pdf" download>Résumé ↓</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-tag">Designer · Artist · Data Analyst</p>
+    <h1 class="hero-h1">Jannatun<br><span class="italic">Tazree</span></h1>
+    <p class="hero-sub">UI/UX designer, digital artist, and data analyst — blending technical depth with visual storytelling. Graduate of the University of Liberal Arts Bangladesh.</p>
+    <div class="hero-btns">
+      <a href="#art" class="btn btn-solid">View Work</a>
+      <a href="assets/CV_Jannatun_Tazree.pdf" download class="btn btn-ghost">Download CV ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">3</div><div class="stat-label">Project Types</div></div>
+      <div><div class="stat-num">18+</div><div class="stat-label">Artworks</div></div>
+      <div><div class="stat-num">10</div><div class="stat-label">App Screens</div></div>
+    </div>
   </div>
-  <div>
-    <ul>
-      <li><a href="home.html" style="color: white; font-family: 'Hina Mincho', serif; font-size: 27px;" target="_self" id="a1">Home</a></li>
-      <li><a href="activity.html" style="color: white; font-family: 'Hina Mincho', serif; font-size: 27px;" target="_self" id="a2">Activity</a></li>
-    </ul>
+  <div class="hero-right">
+    <div class="hero-grid">
+      <img class="tall" src="https://static.wixstatic.com/media/2a0fd0_9317ffa5278e4bf486ef27656cc4211e~mv2.png/v1/fill/w_384,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_9317ffa5278e4bf486ef27656cc4211e~mv2.png" alt="">
+      <img src="https://static.wixstatic.com/media/2a0fd0_a340edd38cd04b62a31872c50fecb583~mv2.png/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_a340edd38cd04b62a31872c50fecb583~mv2.png" alt="">
+      <img src="https://static.wixstatic.com/media/2a0fd0_ed5206a6029b4285bdb476d5aa7f1b96~mv2.png/v1/fill/w_554,h_554,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_ed5206a6029b4285bdb476d5aa7f1b96~mv2.png" alt="">
+      <img class="tall" src="https://static.wixstatic.com/media/2a0fd0_192234650ca14fa79224b145af0e758c~mv2.png/v1/fill/w_419,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_192234650ca14fa79224b145af0e758c~mv2.png" alt="">
+      <img src="https://static.wixstatic.com/media/2a0fd0_260ca33f3e87410caf590a84c1a5ad5e~mv2.png/v1/fill/w_497,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_260ca33f3e87410caf590a84c1a5ad5e~mv2.png" alt="">
+      <img src="https://static.wixstatic.com/media/2a0fd0_cc5050fe7378474b951f86e22f2cf51f~mv2.png/v1/crop/x_2294,y_2230,w_8404,h_8378/fill/w_473,h_472,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_cc5050fe7378474b951f86e22f2cf51f~mv2.png" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span class="hi">Digital Art</span><span>·</span><span>Adobe Illustrator</span><span>·</span>
+    <span class="hi">UI/UX Design</span><span>·</span><span>Figma</span><span>·</span>
+    <span>Layout Design</span><span>·</span><span class="hi">Canva</span><span>·</span>
+    <span>Arduino</span><span>·</span><span>MATLAB</span><span>·</span><span>Proteus</span><span>·</span>
+    <span class="hi">Data Analytics</span><span>·</span><span>Power BI</span><span>·</span>
+    <span>Fake News Analysis</span><span>·</span><span class="hi">Mobile Design</span><span>·</span><span>Illustration</span><span>·</span>
+    <span>Digital Art</span><span>·</span><span>Adobe Illustrator</span><span>·</span>
+    <span class="hi">UI/UX Design</span><span>·</span><span>Figma</span><span>·</span>
+    <span>Layout Design</span><span>·</span><span class="hi">Canva</span><span>·</span>
+    <span>Arduino</span><span>·</span><span>MATLAB</span><span>·</span><span>Proteus</span><span>·</span>
+    <span class="hi">Data Analytics</span><span>·</span><span>Power BI</span><span>·</span>
+    <span class="hi">Mobile Design</span><span>·</span><span>Illustration</span><span>·</span>
   </div>
 </div>
 
+<!-- ABOUT -->
+<section class="about r" id="about">
+  <div class="about-img">
+    <img src="img/Jannatun_Tazree.jpg" alt="Jannatun Tazree">
+  </div>
+  <div>
+    <p class="about-eyebrow">About Me</p>
+    <h2 class="about-h2">Technical mind,<br><em>creative soul</em></h2>
+    <p class="about-p">B.Sc. in Electronics and Telecommunication Engineering from <strong>University of Liberal Arts Bangladesh</strong>, currently pursuing an MS in Information Technology at <strong>Jahangirnagar University</strong>. I bridge engineering rigour with creative design across digital art, UI/UX, layout work, and data analytics.</p>
+    <p class="about-p">📍 Mirpur-01, Dhaka, Bangladesh &nbsp;·&nbsp; 📧 tazreeoishee00@gmail.com &nbsp;·&nbsp; 📞 +880 1682-847924</p>
+    <div class="tags">
+      <span class="tag">Adobe Illustrator</span>
+      <span class="tag">Adobe Photoshop</span>
+      <span class="tag">Figma</span>
+      <span class="tag">Canva</span>
+      <span class="tag">CubiCasa</span>
+      <span class="tag">HTML5 & CSS3</span>
+      <span class="tag">MATLAB</span>
+      <span class="tag">Proteus</span>
+      <span class="tag">CST Studio</span>
+      <span class="tag">Microwind</span>
+      <span class="tag">MS Office</span>
+      <span class="tag">Power BI</span>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="cv-section">
+      <p class="cv-section-title">Experience</p>
+      <div class="cv-item">
+        <div class="cv-header"><span class="cv-role">Administrative Officer</span><span class="cv-date">Mar–Jun 2023</span></div>
+        <div class="cv-org">FST Consultancy</div>
+        <p class="cv-desc">Managed office operations, student records, financial tracking, and marketing. Coordinated communication between students, consultants, and external partners.</p>
+      </div>
+      <div class="cv-item">
+        <div class="cv-header"><span class="cv-role">Layout Producer</span><span class="cv-date">Jan–Mar 2021</span></div>
+        <div class="cv-org">IoT Lab BD</div>
+        <p class="cv-desc">Designed and optimised workspace layouts; collaborated with designers on ergonomic, regulation-compliant workspace solutions.</p>
+      </div>
+      <div class="cv-item">
+        <div class="cv-header"><span class="cv-role">Intern</span><span class="cv-date">Sep–Nov 2019</span></div>
+        <div class="cv-org">Anis IT Corporation BD</div>
+        <p class="cv-desc">Project coordination, planning, and technical documentation.</p>
+      </div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="cv-section">
+      <p class="cv-section-title">Achievements</p>
+      <div class="ach-grid">
+        <div class="ach-item"><span class="ach-year">2022</span><span class="ach-label">Advanced Google Analytics — Google</span></div>
+        <div class="ach-item"><span class="ach-year">2020</span><span class="ach-label">LOGO Contest Certificate — ULAB ERC</span></div>
+        <div class="ach-item"><span class="ach-year">2019</span><span class="ach-label">MATLAB Completion Certificate — ULAB ERC</span></div>
+        <div class="ach-item"><span class="ach-year">2018</span><span class="ach-label">3rd Prize — ULAB ETE Dept. Project Showcase</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ART GALLERY -->
+<section class="gallery-wrap" id="art">
+  <div class="gallery-header r">
+    <div class="sec-head" style="margin-bottom:0">
+      <p class="sec-eye">01 — Digital Art</p>
+      <h2 class="sec-h2">Selected <em>Artworks</em></h2>
+      <div class="sec-line"></div>
+    </div>
+    <p style="max-width:300px;font-size:.95rem;font-weight:300;color:var(--muted);line-height:1.7">Click any piece to view full size. &nbsp;<a href="https://tazreeoishee00.wixsite.com/my-site" target="_blank" style="color:var(--olive);font-weight:600;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;">View Full Portfolio ↗</a></p>
+  </div>
+
+  <div class="gallery-grid r">
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_cc5050fe7378474b951f86e22f2cf51f~mv2.png/v1/crop/x_2294,y_2230,w_8404,h_8378/fill/w_473,h_472,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_cc5050fe7378474b951f86e22f2cf51f~mv2.png" alt="Digital Art"><div class="glabel"><span>Illustration</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_9317ffa5278e4bf486ef27656cc4211e~mv2.png/v1/fill/w_384,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_9317ffa5278e4bf486ef27656cc4211e~mv2.png" alt="Portrait"><div class="glabel"><span>Portrait</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_ed5206a6029b4285bdb476d5aa7f1b96~mv2.png/v1/fill/w_554,h_554,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_ed5206a6029b4285bdb476d5aa7f1b96~mv2.png" alt="Digital Art"><div class="glabel"><span>Digital Art</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_cd57fe50bb6349848e70f6445a0b2e38~mv2.png/v1/fill/w_411,h_411,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_cd57fe50bb6349848e70f6445a0b2e38~mv2.png" alt="Digital Art"><div class="glabel"><span>Composition</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_5497011a56a8455b955e3f35fdc7b89d~mv2.png/v1/fill/w_452,h_475,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_5497011a56a8455b955e3f35fdc7b89d~mv2.png" alt="Digital Art"><div class="glabel"><span>Artwork</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_c2480ba70022405a8e2380a4b7c15be0~mv2.png/v1/crop/x_1790,y_173,w_3347,h_3315/fill/w_387,h_383,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_c2480ba70022405a8e2380a4b7c15be0~mv2.png" alt="Digital Art"><div class="glabel"><span>Illustration</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_260ca33f3e87410caf590a84c1a5ad5e~mv2.png/v1/fill/w_497,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_260ca33f3e87410caf590a84c1a5ad5e~mv2.png" alt="Digital Art"><div class="glabel"><span>Digital Art</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_a340edd38cd04b62a31872c50fecb583~mv2.png/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_a340edd38cd04b62a31872c50fecb583~mv2.png" alt="Digital Art"><div class="glabel"><span>Character Design</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_068978361cbd462aba5cfd4a5d80fc3a~mv2.png/v1/fill/w_294,h_227,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_068978361cbd462aba5cfd4a5d80fc3a~mv2.png" alt="Digital Art"><div class="glabel"><span>Scene</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_5b4c910f199b42c7a8728d6202c5f8f5~mv2.png/v1/fill/w_311,h_395,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_5b4c910f199b42c7a8728d6202c5f8f5~mv2.png" alt="Portrait"><div class="glabel"><span>Portrait</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_c11275d28eb04e2ab740c45d4341d3e5~mv2.png/v1/fill/w_686,h_645,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_c11275d28eb04e2ab740c45d4341d3e5~mv2.png" alt="Digital Art"><div class="glabel"><span>Artwork</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_0e5fe6f8818d49f3aa25d0ca426897df~mv2.png/v1/fill/w_370,h_285,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_0e5fe6f8818d49f3aa25d0ca426897df~mv2.png" alt="Design"><div class="glabel"><span>Design</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_bfed8f013da14e5fa64b6a14c444965e~mv2.png/v1/fill/w_366,h_285,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_bfed8f013da14e5fa64b6a14c444965e~mv2.png" alt="Design"><div class="glabel"><span>Design</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_2c6c878d775347d6b0adcbedda86d85f~mv2.png/v1/fill/w_545,h_546,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_2c6c878d775347d6b0adcbedda86d85f~mv2.png" alt="Illustration"><div class="glabel"><span>Illustration</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_f9555a2c61c54cfdacb9fb564e4b3f4f~mv2.png/v1/fill/w_600,h_455,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_f9555a2c61c54cfdacb9fb564e4b3f4f~mv2.png" alt="Artwork"><div class="glabel"><span>Artwork</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_79ff0cff32c649fb8d1051a338bc9305~mv2.png/v1/fill/w_594,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_79ff0cff32c649fb8d1051a338bc9305~mv2.png" alt="Character"><div class="glabel"><span>Character</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_8b2d17a0c2c44a5f8731e61489d8a64c~mv2.png/v1/crop/x_1102,y_1602,w_7239,h_4066/fill/w_825,h_455,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_8b2d17a0c2c44a5f8731e61489d8a64c~mv2.png" alt="Scene"><div class="glabel"><span>Scene</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_192234650ca14fa79224b145af0e758c~mv2.png/v1/fill/w_419,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_192234650ca14fa79224b145af0e758c~mv2.png" alt="Portrait"><div class="glabel"><span>Portrait</span></div></div>
+    <div class="gitem"><img src="https://static.wixstatic.com/media/2a0fd0_79ffa2f6f3e140bcb25886de27dcaf1c~mv2.png/v1/fill/w_343,h_406,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a0fd0_79ffa2f6f3e140bcb25886de27dcaf1c~mv2.png" alt="Illustration"><div class="glabel"><span>Illustration</span></div></div>
+  </div>
+</section>
+
+<!-- CASE STUDY: BRAINBRIDGE -->
+<section class="case r" id="brainbridge">
+  <div class="sec-head" style="margin-bottom:2.5rem">
+    <p class="sec-eye">02 — UI/UX Case Study</p>
+    <h2 class="sec-h2" style="color:var(--cream)">BrainBridge <em>App</em></h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="case-intro">
+    <div>
+      <div class="brainbridge-badge">
+        <span>🧠 BrainBridge — connects knowledge &amp; goals</span>
+      </div>
+      <p class="case-desc">BrainBridge is a mobile study companion app designed to help students track their learning progress, manage subjects, and stay motivated through streaks and gamified achievements.</p>
+      <p class="case-desc">Designed end-to-end in Figma — from the splash screen and authentication flow through the dashboard, subject library, planner, progress tracker, and analytics.</p>
+      <div class="features">
+        <span class="feat">Onboarding</span>
+        <span class="feat">Auth Flow</span>
+        <span class="feat">Dashboard</span>
+        <span class="feat">Subject Picker</span>
+        <span class="feat">Study Planner</span>
+        <span class="feat">Progress Tracking</span>
+        <span class="feat">Analytics</span>
+        <span class="feat">Settings</span>
+      </div>
+    </div>
+    <div>
+      <div class="case-meta">
+        <div class="meta-box">
+          <div class="meta-label">Tool</div>
+          <div class="meta-val">Figma</div>
+        </div>
+        <div class="meta-box">
+          <div class="meta-label">Type</div>
+          <div class="meta-val">Mobile App UI</div>
+        </div>
+        <div class="meta-box">
+          <div class="meta-label">Screens</div>
+          <div class="meta-val">10 Screens</div>
+        </div>
+        <div class="meta-box">
+          <div class="meta-label">Palette</div>
+          <div class="meta-val">Olive · Yellow · Cream</div>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem">
+        <a href="https://www.figma.com/design/8NZOs7w068CQsjF5l418jn/Oishee%E2%80%99s-Co-Working?node-id=31-6" target="_blank" class="btn btn-solid" style="background:var(--yellow);color:var(--ink);">View in Figma ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 1: 5 screens -->
+  <p class="screens-title">All Screens</p>
+  <div class="screens-scroll">
+    <div class="screen-item">
+      <div class="screen-phone">
+        <img src="https://static.wixstatic.com/media/bc3ec7bc825c4e6ca746c659189cea83.jpg/v1/fill/w_288,h_162,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/bc3ec7bc825c4e6ca746c659189cea83.jpg" alt="Splash" style="object-fit:cover;background:#f0ece3;display:flex;align-items:center;justify-content:center;">
+        <!-- We'll use SVG placeholders styled like the actual screens since we can render the PDF content -->
+      </div>
+      <div class="screen-label">Splash</div>
+    </div>
+    <div class="screen-item" style="--delay:.05s">
+      <div class="screen-phone" style="background:#6b7a3f;">
+        <svg viewBox="0 0 200 430" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect width="200" height="430" fill="#6b7a3f"/>
+          <text x="100" y="80" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="white" letter-spacing="2">LOGIN</text>
+          <rect x="30" y="120" width="140" height="38" rx="19" fill="rgba(255,255,255,.15)"/>
+          <text x="60" y="144" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,.6)">✉ EMAIL:</text>
+          <rect x="30" y="170" width="140" height="38" rx="19" fill="rgba(255,255,255,.15)"/>
+          <text x="60" y="194" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,.6)">🔐 PASSWORD:</text>
+          <text x="140" y="230" text-anchor="end" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,.5)">Forget Password?</text>
+          <rect x="40" y="370" width="120" height="36" rx="4" fill="#f0c832"/>
+          <text x="100" y="393" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="800" fill="#3a4a20">LOGIN</text>
+        </svg>
+      </div>
+      <div class="screen-label">Login</div>
+    </div>
+    <div class="screen-item">
+      <div class="screen-phone" style="background:#6b7a3f;">
+        <svg viewBox="0 0 200 430" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect width="200" height="430" fill="#6b7a3f"/>
+          <text x="100" y="80" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="white" letter-spacing="2">SIGN UP</text>
+          <rect x="30" y="110" width="140" height="36" rx="18" fill="rgba(255,255,255,.15)"/>
+          <text x="58" y="133" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,.6)">✉ EMAIL:</text>
+          <rect x="30" y="158" width="140" height="36" rx="18" fill="rgba(255,255,255,.15)"/>
+          <text x="58" y="181" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,.6)">🔐 PASSWORD:</text>
+          <rect x="30" y="206" width="140" height="36" rx="18" fill="rgba(255,255,255,.15)"/>
+          <text x="58" y="229" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,.6)">🔐 CONFIRM PASSWORD:</text>
+          <rect x="40" y="370" width="120" height="36" rx="4" fill="#f0c832"/>
+          <text x="100" y="393" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="800" fill="#3a4a20">REGISTER</text>
+        </svg>
+      </div>
+      <div class="screen-label">Sign Up</div>
+    </div>
+    <div class="screen-item">
+      <div class="screen-phone" style="background:#f0ece3;">
+        <svg viewBox="0 0 200 430" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect width="200" height="430" fill="#f0ece3"/>
+          <text x="20" y="75" font-family="sans-serif" font-size="14" font-weight="800" fill="#3a4a20">Hello!</text>
+          <text x="20" y="92" font-family="sans-serif" font-size="8" fill="#5a6b35">Monday, September 23, 2025</text>
+          <rect x="16" y="104" width="78" height="54" rx="10" fill="#6b7a3f"/>
+          <text x="55" y="124" text-anchor="middle" font-family="sans-serif" font-size="7" fill="rgba(255,255,255,.7)">Study Streak</text>
+          <text x="55" y="145" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="800" fill="white">7 Days</text>
+          <rect x="102" y="104" width="82" height="54" rx="10" fill="#6b7a3f"/>
+          <text x="143" y="124" text-anchor="middle" font-family="sans-serif" font-size="7" fill="rgba(255,255,255,.7)">This Week</text>
+          <text x="143" y="145" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="800" fill="white">15 Hours</text>
+          <text x="16" y="178" font-family="sans-serif" font-size="9" font-weight="700" fill="#3a4a20">Today's Schedule</text>
+          <rect x="16" y="188" width="168" height="50" rx="10" fill="#6b7a3f"/>
+          <text x="30" y="206" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,.8)">Subject: 01 · Chapter-05</text>
+          <rect x="120" y="196" width="52" height="22" rx="11" fill="rgba(255,255,255,.2)"/>
+          <text x="146" y="211" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">30 min</text>
+          <rect x="16" y="246" width="168" height="50" rx="10" fill="#6b7a3f"/>
+          <text x="30" y="264" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,.8)">Subject: 02 · Chapter-03</text>
+          <rect x="120" y="254" width="52" height="22" rx="11" fill="rgba(255,255,255,.2)"/>
+          <text x="146" y="269" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">45 min</text>
+          <rect x="40" y="370" width="120" height="34" rx="4" fill="#f0c832"/>
+          <text x="100" y="392" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="800" fill="#3a4a20">START STUDY</text>
+        </svg>
+      </div>
+      <div class="screen-label">Dashboard</div>
+    </div>
+    <div class="screen-item">
+      <div class="screen-phone" style="background:#f0ece3;">
+        <svg viewBox="0 0 200 430" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect width="200" height="430" fill="#f0ece3"/>
+          <text x="100" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#3a4a20">Choose Your Subjects</text>
+          <rect x="20" y="68" width="130" height="28" rx="14" fill="#c8d4a0"/>
+          <text x="50" y="87" font-family="sans-serif" font-size="8" fill="#5a6b35">Search the Subject</text>
+          <circle cx="160" cy="82" r="12" fill="#f0c832"/>
+          <text x="160" y="87" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3a4a20">🔍</text>
+          <rect x="20" y="110" width="72" height="60" rx="8" fill="#6b7a3f"/>
+          <text x="56" y="148" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">Subject: 01</text>
+          <rect x="106" y="110" width="72" height="60" rx="8" fill="#6b7a3f"/>
+          <text x="142" y="148" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">Subject: 02</text>
+          <rect x="20" y="180" width="72" height="60" rx="8" fill="#6b7a3f"/>
+          <text x="56" y="218" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">Subject: 03</text>
+          <rect x="106" y="180" width="72" height="60" rx="8" fill="#6b7a3f"/>
+          <text x="142" y="218" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">Subject: 04</text>
+          <rect x="20" y="250" width="72" height="60" rx="8" fill="#6b7a3f"/>
+          <text x="56" y="288" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">Subject: 05</text>
+          <rect x="106" y="250" width="72" height="60" rx="8" fill="#6b7a3f"/>
+          <text x="142" y="288" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">Subject: 06</text>
+          <rect x="20" y="388" width="160" height="30" rx="20" fill="#a8b880"/>
+          <text x="60" y="408" font-family="sans-serif" font-size="9" fill="#3a4a20">🏠 👤 🏆 ⚙</text>
+        </svg>
+      </div>
+      <div class="screen-label">Subjects</div>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="screens-row2">
+    <div class="screen-item">
+      <div class="screen-phone" style="background:#f0ece3;">
+        <svg viewBox="0 0 200 430" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect width="200" height="430" fill="#f0ece3"/>
+          <text x="100" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#3a4a20">Profile</text>
+          <rect x="22" y="68" width="156" height="200" rx="14" fill="#6b7a3f"/>
+          <circle cx="100" cy="128" r="38" fill="#f0ece3"/>
+          <circle cx="100" cy="120" r="12" fill="none" stroke="#3a4a20" stroke-width="2"/>
+          <path d="M78 148 Q100 138 122 148" fill="none" stroke="#3a4a20" stroke-width="2"/>
+          <text x="100" y="174" text-anchor="middle" font-family="sans-serif" font-size="7" fill="rgba(255,255,255,.6)">Image</text>
+          <rect x="36" y="184" width="128" height="24" rx="12" fill="rgba(255,255,255,.9)"/>
+          <text x="100" y="200" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#888">User Name</text>
+          <rect x="36" y="214" width="128" height="24" rx="12" fill="rgba(255,255,255,.9)"/>
+          <text x="100" y="230" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#888">Email</text>
+          <rect x="36" y="244" width="128" height="24" rx="12" fill="rgba(255,255,255,.9)"/>
+          <text x="100" y="260" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#888">Goals</text>
+          <rect x="40" y="370" width="120" height="34" rx="4" fill="#f0c832"/>
+          <text x="100" y="392" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="800" fill="#3a4a20">SAVE</text>
+        </svg>
+      </div>
+      <div class="screen-label">Profile</div>
+    </div>
+    <div class="screen-item">
+      <div class="screen-phone" style="background:#6b7a3f;">
+        <svg viewBox="0 0 200 430" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect width="200" height="430" fill="#6b7a3f"/>
+          <text x="100" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#3a4a20">Settings</text>
+          <rect x="22" y="90" width="156" height="110" rx="14" fill="#f0ece3"/>
+          <text x="38" y="118" font-family="sans-serif" font-size="9" fill="#3a4a20">Notifications</text>
+          <rect x="148" y="107" width="22" height="13" rx="7" fill="#6b7a3f"/>
+          <circle cx="162" cy="113" r="6" fill="white"/>
+          <line x1="38" y1="128" x2="178" y2="128" stroke="#ddd" stroke-width=".5"/>
+          <text x="38" y="152" font-family="sans-serif" font-size="9" fill="#3a4a20">Voice Assistant</text>
+          <rect x="148" y="141" width="22" height="13" rx="7" fill="#6b7a3f"/>
+          <circle cx="162" cy="147" r="6" fill="white"/>
+          <line x1="38" y1="162" x2="178" y2="162" stroke="#ddd" stroke-width=".5"/>
+          <text x="38" y="186" font-family="sans-serif" font-size="9" fill="#3a4a20">Dark Mode</text>
+          <rect x="148" y="175" width="22" height="13" rx="7" fill="#6b7a3f"/>
+          <circle cx="162" cy="181" r="6" fill="white"/>
+          <rect x="40" y="370" width="120" height="34" rx="4" fill="#f0c832"/>
+          <text x="100" y="392" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="800" fill="#3a4a20">LOGOUT</text>
+        </svg>
+      </div>
+      <div class="screen-label">Settings</div>
+    </div>
+    <div class="screen-item">
+      <div class="screen-phone" style="background:#f0ece3;">
+        <svg viewBox="0 0 200 430" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect width="200" height="430" fill="#f0ece3"/>
+          <text x="100" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#3a4a20">Planner</text>
+          <rect x="20" y="72" width="160" height="220" rx="12" fill="#f5e87a"/>
+          <rect x="30" y="84" width="36" height="18" rx="4" fill="#b0a870"/>
+          <rect x="74" y="84" width="96" height="18" rx="4" fill="#b0a870"/>
+          <line x1="30" y1="118" x2="170" y2="118" stroke="#c8b840" stroke-width=".5"/>
+          <line x1="30" y1="140" x2="170" y2="140" stroke="#c8b840" stroke-width=".5"/>
+          <line x1="30" y1="162" x2="170" y2="162" stroke="#c8b840" stroke-width=".5"/>
+          <line x1="30" y1="184" x2="170" y2="184" stroke="#c8b840" stroke-width=".5"/>
+          <line x1="30" y1="206" x2="170" y2="206" stroke="#c8b840" stroke-width=".5"/>
+          <line x1="30" y1="228" x2="170" y2="228" stroke="#c8b840" stroke-width=".5"/>
+          <line x1="66" y1="108" x2="66" y2="270" stroke="#c8b840" stroke-width=".5"/>
+          <line x1="102" y1="108" x2="102" y2="270" stroke="#c8b840" stroke-width=".5"/>
+          <line x1="138" y1="108" x2="138" y2="270" stroke="#c8b840" stroke-width=".5"/>
+          <rect x="40" y="370" width="120" height="34" rx="4" fill="#f0c832"/>
+          <text x="100" y="392" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="800" fill="#3a4a20">ADD TASK</text>
+        </svg>
+      </div>
+      <div class="screen-label">Planner</div>
+    </div>
+    <div class="screen-item">
+      <div class="screen-phone" style="background:#f0ece3;">
+        <svg viewBox="0 0 200 430" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect width="200" height="430" fill="#f0ece3"/>
+          <text x="100" y="45" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#3a4a20">Progress</text>
+          <circle cx="100" cy="118" r="54" fill="none" stroke="#e0c0c0" stroke-width="10"/>
+          <path d="M100 64 A54 54 0 1 1 47 145" fill="none" stroke="#b84040" stroke-width="10" stroke-linecap="round"/>
+          <text x="100" y="124" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="800" fill="#3a4a20">90%</text>
+          <text x="100" y="186" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5a6b35">This Week</text>
+          <rect x="20" y="200" width="160" height="44" rx="8" fill="#e8c8c8"/>
+          <text x="60" y="218" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#5a3030">Total Hours</text>
+          <text x="60" y="234" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#b84040">13.5 hrs</text>
+          <line x1="100" y1="202" x2="100" y2="242" stroke="#d0a0a0" stroke-width=".5"/>
+          <text x="140" y="218" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#5a3030">Completed</text>
+          <text x="140" y="234" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#b84040">25 tasks</text>
+          <rect x="20" y="254" width="160" height="24" rx="8" fill="#e8c8c8"/>
+          <text x="30" y="270" font-family="sans-serif" font-size="7" fill="#5a3030">Subject: 01</text>
+          <rect x="20" y="256" width="96" height="7" rx="3" fill="#6b7a3f"/>
+          <rect x="20" y="284" width="160" height="24" rx="8" fill="#e8c8c8"/>
+          <text x="30" y="300" font-family="sans-serif" font-size="7" fill="#5a3030">Subject: 02</text>
+          <rect x="20" y="314" width="160" height="24" rx="8" fill="#e8c8c8"/>
+          <text x="30" y="330" font-family="sans-serif" font-size="7" fill="#5a3030">Subject: 03</text>
+        </svg>
+      </div>
+      <div class="screen-label">Progress</div>
+    </div>
+    <div class="screen-item">
+      <div class="screen-phone" style="background:#f0ece3;">
+        <svg viewBox="0 0 200 430" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect width="200" height="430" fill="#f0ece3"/>
+          <text x="100" y="45" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#3a4a20">Analytics</text>
+          <line x1="28" y1="220" x2="185" y2="220" stroke="#999" stroke-width=".5"/>
+          <line x1="28" y1="60" x2="28" y2="220" stroke="#999" stroke-width=".5"/>
+          <rect x="38" y="148" width="18" height="72" fill="#f5e87a"/>
+          <rect x="64" y="158" width="18" height="62" fill="#b84040"/>
+          <rect x="90" y="142" width="18" height="78" fill="#b0a870"/>
+          <rect x="116" y="132" width="18" height="88" fill="#3a4a20"/>
+          <rect x="142" y="136" width="18" height="84" fill="#f0c832"/>
+          <rect x="168" y="126" width="18" height="94" fill="#6b7a3f"/>
+          <text x="47" y="234" text-anchor="middle" font-family="sans-serif" font-size="5.5" fill="#666">S:01</text>
+          <text x="73" y="234" text-anchor="middle" font-family="sans-serif" font-size="5.5" fill="#666">S:02</text>
+          <text x="99" y="234" text-anchor="middle" font-family="sans-serif" font-size="5.5" fill="#666">S:03</text>
+          <text x="125" y="234" text-anchor="middle" font-family="sans-serif" font-size="5.5" fill="#666">S:04</text>
+          <text x="151" y="234" text-anchor="middle" font-family="sans-serif" font-size="5.5" fill="#666">S:05</text>
+          <text x="177" y="234" text-anchor="middle" font-family="sans-serif" font-size="5.5" fill="#666">S:06</text>
+          <text x="20" y="255" font-family="sans-serif" font-size="10" font-weight="700" fill="#3a4a20">Achievements</text>
+          <rect x="20" y="264" width="160" height="64" rx="10" fill="#6b7a3f"/>
+          <text x="30" y="281" font-family="sans-serif" font-size="7" font-weight="700" fill="white">Points Earned</text>
+          <text x="50" y="308" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="white">650</text>
+          <text x="50" y="320" text-anchor="middle" font-family="sans-serif" font-size="6" fill="rgba(255,255,255,.5)">TOTAL</text>
+          <text x="140" y="308" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="white">200</text>
+          <text x="140" y="320" text-anchor="middle" font-family="sans-serif" font-size="6" fill="rgba(255,255,255,.5)">TODAY'S</text>
+        </svg>
+      </div>
+      <div class="screen-label">Analytics</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAKE NEWS ANALYSIS — POWER BI -->
+<section class="data-section r" id="fakenews">
+  <div class="sec-head" style="margin-bottom:2.5rem">
+    <p class="sec-eye">03 — Data Analytics Project</p>
+    <h2 class="sec-h2">Fake News <em>Analysis</em></h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="data-intro">
+    <div>
+      <div class="data-badge">
+        <span>📊 Power BI &nbsp;·&nbsp; Multimodal Research Dataset</span>
+      </div>
+      <p class="data-desc">A comprehensive data analytics project exploring fake news patterns using an annotated multimodal dataset. Each record contains the article title, full content, source, publication date, claim type, contextual metadata, and a final human-verified decision label — enabling rich cross-dimensional analysis.</p>
+      <p class="data-desc">The dataset supports both textual and visual research workflows: image paths are included for multimodal machine learning experiments. The Power BI dashboard uncovers patterns across claim types, source credibility, temporal trends, and label distribution.</p>
+      <div class="features">
+        <span class="feat">Label Distribution</span>
+        <span class="feat">Source Analysis</span>
+        <span class="feat">Claim Type Breakdown</span>
+        <span class="feat">Temporal Trends</span>
+        <span class="feat">Multimodal Support</span>
+        <span class="feat">8-Class Classification</span>
+        <span class="feat">Power BI Visuals</span>
+      </div>
+      <!-- 8 class labels -->
+      <div class="data-labels-row">
+        <span class="label-pill pill-false">False</span>
+        <span class="label-pill pill-misc">Misleading</span>
+        <span class="label-pill pill-misc">Altered</span>
+        <span class="label-pill pill-false">Scam</span>
+        <span class="label-pill pill-sat">Satire</span>
+        <span class="label-pill pill-true">True</span>
+        <span class="label-pill pill-misc">Partially True</span>
+        <span class="label-pill pill-misc">Partially False</span>
+      </div>
+    </div>
+    <div>
+      <div class="data-meta">
+        <div class="data-meta-box">
+          <div class="data-meta-label">Tool</div>
+          <div class="data-meta-val">Power BI</div>
+        </div>
+        <div class="data-meta-box">
+          <div class="data-meta-label">Type</div>
+          <div class="data-meta-val">Data Analytics</div>
+        </div>
+        <div class="data-meta-box">
+          <div class="data-meta-label">Labels</div>
+          <div class="data-meta-val">8-Class</div>
+        </div>
+        <div class="data-meta-box">
+          <div class="data-meta-label">Mode</div>
+          <div class="data-meta-val">Text + Image</div>
+        </div>
+        <div class="data-meta-box">
+          <div class="data-meta-label">Status</div>
+          <div class="data-meta-val">In Progress</div>
+        </div>
+        <div class="data-meta-box">
+          <div class="data-meta-label">Domain</div>
+          <div class="data-meta-val">Media &amp; Misinformation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dataset schema -->
+  <p class="screens-title" style="color:var(--muted)">Dataset Schema</p>
+  <table class="schema-table r">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>title</strong></td>
+        <td>Text</td>
+        <td>Headline or title of the news article / claim</td>
+      </tr>
+      <tr>
+        <td><strong>content</strong></td>
+        <td>Text</td>
+        <td>Full body text of the article or statement under review</td>
+      </tr>
+      <tr>
+        <td><strong>source</strong></td>
+        <td>Text</td>
+        <td>Publication or platform where the content originated</td>
+      </tr>
+      <tr>
+        <td><strong>date</strong></td>
+        <td>Date</td>
+        <td>Publication or verification date — supports temporal trend analysis</td>
+      </tr>
+      <tr>
+        <td><strong>claim_type</strong></td>
+        <td>Category</td>
+        <td>Nature of the claim (e.g. health, politics, science, social media)</td>
+      </tr>
+      <tr>
+        <td><strong>context</strong></td>
+        <td>Text</td>
+        <td>Additional background metadata for fact-checking decisions</td>
+      </tr>
+      <tr>
+        <td><strong>final_decision</strong></td>
+        <td>Text</td>
+        <td>Human-verified verdict used as ground truth for the label</td>
+      </tr>
+      <tr>
+        <td><strong>summary</strong></td>
+        <td>Text</td>
+        <td>Short annotator summary of the fact-checking outcome</td>
+      </tr>
+      <tr>
+        <td><strong>label</strong></td>
+        <td>Enum (8)</td>
+        <td>Classification target — False / Misleading / Altered / Scam / Satire / True / Partially True / Partially False</td>
+      </tr>
+      <tr>
+        <td><strong>image_path</strong></td>
+        <td>Path</td>
+        <td>File reference to associated image for multimodal research pipelines</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Power BI visual breakdown -->
+  <div class="data-vis r">
+    <div class="data-vis-card">
+      <div class="data-vis-icon">📈</div>
+      <div class="data-vis-title">Label Distribution</div>
+      <div class="data-vis-desc">Donut and bar charts showing the proportion of each of the 8 label categories — revealing class imbalance and dominant misinformation types in the dataset.</div>
+    </div>
+    <div class="data-vis-card">
+      <div class="data-vis-icon">🗓️</div>
+      <div class="data-vis-title">Temporal Trends</div>
+      <div class="data-vis-desc">Line chart mapping publication dates against label volume — exposing spikes in fake news production around specific events or time periods.</div>
+    </div>
+    <div class="data-vis-card">
+      <div class="data-vis-icon">📰</div>
+      <div class="data-vis-title">Source Credibility</div>
+      <div class="data-vis-desc">Matrix visual ranking sources by their ratio of false / misleading content, helping identify outlets with consistently low fact-check scores.</div>
+    </div>
+    <div class="data-vis-card">
+      <div class="data-vis-icon">🏷️</div>
+      <div class="data-vis-title">Claim Type Analysis</div>
+      <div class="data-vis-desc">Stacked bar chart cross-referencing claim type (health, politics, etc.) against label — showing which domains generate the most Scam or Altered content.</div>
+    </div>
+    <div class="data-vis-card">
+      <div class="data-vis-icon">🖼️</div>
+      <div class="data-vis-title">Multimodal Coverage</div>
+      <div class="data-vis-desc">Visual metric tracking what percentage of records include an associated image path — quantifying multimodal dataset completeness for ML use cases.</div>
+    </div>
+    <div class="data-vis-card">
+      <div class="data-vis-icon">⚖️</div>
+      <div class="data-vis-title">Decision vs. Label</div>
+      <div class="data-vis-desc">Comparison table aligning the free-text final_decision with the structured label — useful for auditing annotation consistency across reviewers.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="tools-wrap r">
+  <div class="sec-head">
+    <p class="sec-eye">Skills & Tools</p>
+    <h2 class="sec-h2">Built with <em>craft</em></h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="tools-grid">
+    <div class="tool-card">
+      <div class="tool-icon">🎨</div>
+      <div class="tool-name">Adobe Illustrator</div>
+      <div class="tool-desc">Vector illustration, logo design, and precision graphic work.</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">🖌️</div>
+      <div class="tool-name">Digital Art</div>
+      <div class="tool-desc">Character design, portraits, scenes and expressive illustrations.</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">📐</div>
+      <div class="tool-name">Figma</div>
+      <div class="tool-desc">End-to-end mobile UI/UX design, prototyping and component systems.</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">✏️</div>
+      <div class="tool-name">Canva</div>
+      <div class="tool-desc">Rapid layout design, social graphics and visual communication.</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">⚡</div>
+      <div class="tool-name">Arduino</div>
+      <div class="tool-desc">Hardware prototyping and embedded systems design.</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">📊</div>
+      <div class="tool-name">MATLAB</div>
+      <div class="tool-desc">Numerical computation and engineering analysis.</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">🔌</div>
+      <div class="tool-name">Proteus</div>
+      <div class="tool-desc">Circuit simulation and PCB design.</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">📋</div>
+      <div class="tool-name">Layout Design</div>
+      <div class="tool-desc">Grid systems, print and screen layout composition.</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">📊</div>
+      <div class="tool-name">Power BI</div>
+      <div class="tool-desc">Interactive data dashboards, visual analytics, and reporting for research and business intelligence.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact r" id="contact">
+  <div>
+    <p class="sec-eye">Let's Connect</p>
+    <h2 class="contact-h2">Open to<br><em>opportunities</em></h2>
+    <p class="contact-p">Available for freelance projects, collaborations, and full-time design roles. Let's make something memorable together.</p>
+    <div class="clinks">
+      <a href="mailto:tazreeoishee00@gmail.com" class="clink">✉ tazreeoishee00@gmail.com</a>
+      <a href="tel:+8801682847924" class="clink">📞 +880 1682-847924</a>
+      <a href="https://www.linkedin.com/in/jannatuntazree/" target="_blank" class="clink">↗ linkedin.com/in/jannatuntazree</a>
+      <a href="https://tazreeoishee00.wixsite.com/my-site" target="_blank" class="clink">↗ Portfolio Site</a>
+      <a href="https://www.figma.com/design/8NZOs7w068CQsjF5l418jn/Oishee%E2%80%99s-Co-Working" target="_blank" class="clink">↗ Figma Work</a>
+      <a href="assets/CV_Jannatun_Tazree.pdf" download class="clink">↓ Download CV</a>
+    </div>
+  </div>
+  <form class="cform" onsubmit="return false;">
+    <div class="cf">
+      <label>Your Name</label>
+      <input type="text" placeholder="Full name">
+    </div>
+    <div class="cf">
+      <label>Email</label>
+      <input type="email" placeholder="you@email.com">
+    </div>
+    <div class="cf">
+      <label>Message</label>
+      <textarea placeholder="Tell me about your project…"></textarea>
+    </div>
+    <button class="btn btn-solid btn-submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 <span class="foot-accent">Jannatun Tazree</span> · All Rights Reserved</p>
+  <p>ULAB · Digital Art · UI/UX · Figma · Power BI</p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
